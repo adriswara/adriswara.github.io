@@ -11,3 +11,7 @@ h2{
 .paragraph{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.liLink{
+    color: black;
+display: inline-block;
+}
