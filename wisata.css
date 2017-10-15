@@ -1,0 +1,13 @@
+body{
+    background-color: bisque;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.paragraph{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
