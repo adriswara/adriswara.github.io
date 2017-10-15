@@ -4,3 +4,12 @@ body{
     margin: 30px;
 
 }
+.liLink a{
+    color: black;
+display: inline-block;
+list-style-type: none;
+}
+
+.liLink{
+    list-style-type: none;
+}
