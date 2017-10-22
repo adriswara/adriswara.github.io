@@ -1,6 +1,8 @@
 body{
     background-image:url("6877677741832.jpg") ; 
     background-size:cover;
+    background-attachment: fixed,scroll;
+    background-repeat: no-repeat,repeat-y;
 }
 .liLink a{
     color: black;
