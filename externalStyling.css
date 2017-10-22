@@ -1,3 +1,6 @@
+*{
+ font-family: Arial, Helvetica, sans-serif;   
+}
 body{
     background-image:url("6877677741832.jpg") ; 
     background-size:cover;
@@ -6,4 +9,21 @@ body{
 }
 .whitePage{
     background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.blackHeader{
+    background-color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.headIMG{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
