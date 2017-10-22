@@ -4,12 +4,6 @@ body{
     background-attachment: fixed,scroll;
     background-repeat: no-repeat,repeat-y;
 }
-.liLink a{
-    color: black;
-display: inline-block;
-list-style-type: none;
-}
-
-.liLink{
-    list-style-type: none;
+.whitePage{
+    background-color: white;
 }
