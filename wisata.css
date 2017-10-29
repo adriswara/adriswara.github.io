@@ -1,13 +1,14 @@
-body{
-    background-color: beige;
-    background-image: url("nurburgring-wallpaper.jpg");
+.header{
+    
+    background-image: url("dronegedungsate.jpg");
     background-size:cover;
-    background-attachment: fixed,scroll;
-    background-repeat: no-repeat,repeat-y; 
+    font-family: 'Times New Roman', Times, serif;
+    
+  
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
-    color: beige;
+    color: black;
 }
 h2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
