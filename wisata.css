@@ -1,11 +1,23 @@
 body{
-    background-image: url("typografiMap.jpg")
+    background-image: url("typografiMap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed,scroll;
+    background-repeat: no-repeat,repeat-y;
+
 }
 .header{
     
     background-image: url("dronegedungsate.jpg");
     background-size:cover;
     font-family: 'Times New Roman', Times, serif;
+}
+.mapPar{
+background-image: url("travelMap.jpg");
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: contain;
 }
 h1{
     font-family: 'Times New Roman', Times, serif;
