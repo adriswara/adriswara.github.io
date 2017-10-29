@@ -1,0 +1,40 @@
+body{
+    background-image: url("typografiMap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed,scroll;
+    background-repeat: no-repeat,repeat-y;
+
+}
+.header{
+    
+    background-image: url("dronegedungsate.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat
+}
+.mapPar{
+background-color: beige;
+}
+#imgTravel{
+    size:100%;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.paragraph{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.liLink a{
+    color: black;
+display: inline-block;
+list-style-type: none;
+}
+.liLink{
+    list-style-type: none;
+}
