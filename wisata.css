@@ -20,7 +20,13 @@ background-color: rgba(245, 245, 220, 0.76);
 #imgTravel{
     size:100%;
 }
-
+.braga{
+    background-image: url("bragaLightTrail2.jpg");
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 h1{
     font-family: 'Times New Roman', Times, serif;
     color: black;
