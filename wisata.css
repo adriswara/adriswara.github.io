@@ -1,3 +1,7 @@
+@font-face{
+    font-family: "Bebas";
+    src: url("BEBAS.TTF");
+}
 body{
     background-image: url("typografiMap.jpg");
     background-repeat: no-repeat;
@@ -7,12 +11,14 @@ body{
 
 }
 .header{
-    
-    background-image: url("dronegedungsate.jpg");
+    background-color:rgba(245, 245, 220, 0.603);
+    min-height: 600px;
+    background-image: url("Chinatown Entry.jpg");
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
 }
 .mapPar{
 background-color: rgba(245, 245, 220, 0.76);
