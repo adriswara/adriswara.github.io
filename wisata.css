@@ -2,8 +2,12 @@
     font-family: "Bebas";
     src: url("BEBAS.TTF");
 }
+@font-face{
+font-family:"GOT";
+src: url("GangOfThree.ttf");
+}
 body{
-    background-image: url("typografiMap.jpg");
+    background-image: url("Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed,scroll;
@@ -24,13 +28,15 @@ body{
     
 }
 .mapPar{
- background-color: rgba(245, 245, 220, 0.76);
+    min-height: 500px;
+ /* background-color: rgba(245, 245, 220, 0.76); */
+ background-color: #bf1522;
 }
 #imgTravel{
     size:100%;
 }
 .braga{
-    background-image: url("bragaLightTrail2.jpg");
+    background-image: url("chinatownlight.jpg");
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
