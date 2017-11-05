@@ -1,10 +1,12 @@
+
 <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"> </script>
-<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>\
-<script>
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
     firebase.initializeApp({
-        apiKey:"AIzaSyC8w8PbH9e9fo99w8EOWMTGvr0bDQ1GHL8",
+        apiKey:"AIzaSyAJ1V5MHii0nC6hheqHb3Mq8tJ8gy4lbpQ",
         authDomain : "ajons-project.firebaseapp.com",
-        projectid :"ajons-project"
+        projectId :"ajons-project"
     });
 
     const db=firebase.firestore();
@@ -12,5 +14,10 @@
         name: 'Ajonis',
         slug: 'noisec'
     });
-    
+
+    db.collection('user').get().then(querry=>{
+        querry.forEach(data =>{
+            $('body').append(data.id);
+        });
+    });
 </script>
