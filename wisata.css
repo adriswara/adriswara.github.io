@@ -16,7 +16,7 @@ body{
 }
 .header{
     min-height: 600px;
-    background-image: url("Chinatown Entry.jpg");
+    background-image: url("ChinatownEntry.jpg");
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
