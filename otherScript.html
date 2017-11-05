@@ -1,0 +1,16 @@
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"> </script>
+<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-firestore.js"></script>\
+<script>
+    firebase.initializeApp({
+        apiKey:"AIzaSyC8w8PbH9e9fo99w8EOWMTGvr0bDQ1GHL8",
+        authDomain : "ajons-project.firebaseapp.com",
+        projectid :"ajons-project"
+    });
+
+    const db=firebase.firestore();
+    db.collection('user').add({
+        name: 'Ajonis',
+        slug: 'noisec'
+    });
+    
+</script>
