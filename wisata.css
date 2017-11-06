@@ -7,7 +7,7 @@ font-family:"GOT";
 src: url("GangOfThree.ttf");
 }
 body{
-    background-image: url("dronegedungsate.jpg");
+    background-image: url("Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed,scroll;
