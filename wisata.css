@@ -43,6 +43,12 @@ body{
  /* background-color: rgba(245, 245, 220, 0.76); */
  background-color: #bf1522;
 }
+.beigecontent{
+    margin-left: 450px;
+    min-width: 900px;
+    min-height: 500px;
+    background-color: green;
+}
 #imgTravel{
     size:100%;
 }
