@@ -37,6 +37,7 @@ body{
     min-width: 800px;
 }
 .mapPar{
+    min-width: 350px;
     min-height: 500px;
     /*min-width: 839;*/
  /* background-color: rgba(245, 245, 220, 0.76); */
