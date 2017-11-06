@@ -15,7 +15,7 @@ body{
 
 }
 .header{
-    min-height: 600px;
+    min-height: 650px;
     background-image: url("ChinatownEntry.jpg");
     background-size:cover;
     background-position: center;
@@ -26,6 +26,12 @@ body{
     background-color:rgba(245, 245, 220, 0.603);
     min-height: 600px;
     
+}
+.mapParrent{
+    margin-top: 650px;
+    background-color: beige;
+    min-height: 500px;
+    min-width: 800px;
 }
 .mapPar{
     min-height: 500px;
