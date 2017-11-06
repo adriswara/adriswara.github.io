@@ -46,6 +46,11 @@ body{
 #imgTravel{
     size:100%;
 }
+#aboutbutton{
+    margin-top: 100px;
+    background-color: black;
+    font-family: sans-serif;
+}
 .braga{
     background-image: url("parralax.jpg");
     background-size:cover;
@@ -70,4 +75,11 @@ list-style-type: none;
 }
 .liLink{
     list-style-type: none;
+}
+.imagesPage{
+    margin-top: -15px ;
+   background-color: beige;
+  /*  position: relative; */
+    min-height: 400px;
+    min-width: 800px;
 }
