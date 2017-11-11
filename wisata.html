@@ -19,7 +19,7 @@
         <div class="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style="color: beige">Explore Chinatown</a>
+                <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore <span id="chinaTXT">Chinatown</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,10 +54,10 @@
         <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="margin-top:0px;float: left;position: absolute;">
             <h1 style="font-family:GOT;color: beige ">Chinatown Bandung</h1>
             <center>
-                <button id="aboutbutton" type="button" class="btn btn-danger btn-lg" style="background-color: black">Informasi Tiket</button>
+                <button id="aboutbutton" type="button" class="btn btn-danger btn-lg" onclick="" style="background-color: black">Informasi Tiket</button>
             </center>
             <center>
-                <button id="aboutbutton" type="button" class="btn btn-danger btn-lg">Lokasi</button>
+                <button id="locbutton" type="button" class="btn btn-danger btn-lg" onclick="show()">Lokasi</button>
             </center>
         </div>
         <div class="beigecontent" data-aos="fade-left" data-aos-duration="1000" style="margin-top:0px;position: absolute">
@@ -76,6 +76,19 @@
 </body>
 <script>
     AOS.init();
+    var statVisible;
+
+    function show(){
+        console.log("arlin");
+        statVisible = "visible";
+        if(statVisible == "visible"){
+            statVisible == "hidden"
+        }
+    }
+    
+
+   
+    
 </script>
 
 </html>

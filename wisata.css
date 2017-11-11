@@ -15,7 +15,11 @@ body{
 
 }
 #bs-example-navbar-collapse-1{
-    background-color: rgb(79, 47, 47);
+   /* background-color: rgb(79, 47, 47); */
+   background-color: black;
+}
+#chinaTXT{
+    color: #bf1522;
 }
 .header{
     min-height: 650px;
@@ -48,11 +52,18 @@ body{
     min-width: 900px;
     min-height: 500px;
     background-color: green;
+    visibility: hidden ;
 }
 #imgTravel{
     size:100%;
 }
 #aboutbutton{
+    margin-top: 100px;
+    background-color: black;
+    font-family: sans-serif;
+}
+
+#locbutton{
     margin-top: 100px;
     background-color: black;
     font-family: sans-serif;
