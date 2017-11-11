@@ -41,18 +41,24 @@ body{
     min-width: 800px;
 }
 .mapPar{
-    min-width: 350px;
+    min-width: 450px;
     min-height: 500px;
     /*min-width: 839;*/
- /* background-color: rgba(245, 245, 220, 0.76); */
+ background-image: url();
+ /* background-color: #bf1522; */
  background-color: #bf1522;
+ 
+}
+
+#mapTXT{
+    color: black;
 }
 .beigecontent{
     margin-left: 450px;
     min-width: 900px;
     min-height: 500px;
-    background-color: green;
-    visibility: hidden ;
+   background-image: url("maps.png");
+   background-size: cover;
 }
 #imgTravel{
     size:100%;

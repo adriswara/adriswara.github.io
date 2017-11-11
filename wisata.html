@@ -9,7 +9,7 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="wisata.css">
-
+    <script src="e:\Github\.git\adriswara.github.io\js\jquery-3.2.1.min.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- <link rel="stylesheet" href="theme.css">-->
 </head>
@@ -19,7 +19,9 @@
         <div class="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore <span id="chinaTXT">Chinatown</span></a>
+                <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore
+                    <span id="chinaTXT">Chinatown</span>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,18 +54,16 @@
     </div>
     <div class="mapParrent" style="position: relative;">
         <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="margin-top:0px;float: left;position: absolute;">
-            <h1 style="font-family:GOT;color: beige ">Chinatown Bandung</h1>
+
+
             <center>
-                <button id="aboutbutton" type="button" class="btn btn-danger btn-lg" onclick="" style="background-color: black">Informasi Tiket</button>
-            </center>
-            <center>
-                <button id="locbutton" type="button" class="btn btn-danger btn-lg" onclick="show()">Lokasi</button>
+               <p style="margin-top: 200px" > <span id="mapTXT" style="padding: 10px;letter-spacing: 5px ;font-size: 20px ;background-color:beige;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',"> KUNJUNGI KAMI DISINI</span></p>
+               
+                   
             </center>
         </div>
-        <div class="beigecontent" data-aos="fade-left" data-aos-duration="1000" style="margin-top:0px;position: absolute">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium, eaque cumque maiores illum odit
-                eveniet. Aut saepe, nam fugit possimus corrupti dignissimos voluptatem quis, recusandae, ratione ullam quas
-                voluptatibus.</p>
+        <!---->
+        <div id="beigeID" class="beigecontent" data-aos="fade-left" data-aos-duration="1000" style="margin-top:0px;position: absolute">
         </div>
     </div>
     <div class="braga" style="border: solid;margin-top: 0px;height: 300px">
@@ -76,19 +76,18 @@
 </body>
 <script>
     AOS.init();
-    var statVisible;
 
-    function show(){
-        console.log("arlin");
-        statVisible = "visible";
-        if(statVisible == "visible"){
-            statVisible == "hidden"
-        }
-    }
-    
 
-   
-    
+    $(document).ready(function () {
+        $("#locbutton").click(function () {
+            $("#beigeID").slideToggle("slow");
+            console.log("is show");
+        });
+    });
+
+
+
+
 </script>
 
 </html>
