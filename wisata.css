@@ -47,7 +47,19 @@ body{
  background-image: url();
  /* background-color: #bf1522; */
  background-color: #bf1522;
- 
+}
+
+.TicketParrent{
+    margin-top: 650px;
+    background-color: beige;
+    min-height: 500px;
+    min-width: 800px;
+}
+
+.tcktPar{
+    min-width: 450px;
+    min-height: 500px;
+    background-color: #bf1522;
 }
 
 #mapTXT{
@@ -59,6 +71,14 @@ body{
     min-height: 500px;
    background-image: url("maps.png");
    background-size: cover;
+}
+.TicketPhoto{
+    margin-left: 450px;
+    min-width: 900px;
+    min-height: 500px;
+   background-image: url("Tiket.jpg");
+   background-size: cover;
+    
 }
 #imgTravel{
     size:100%;
@@ -105,4 +125,11 @@ list-style-type: none;
   /*  position: relative; */
     min-height: 400px;
     min-width: 800px;
+}
+#hargaTXT{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: beige;
+    margin-top: 50px;   
 }
