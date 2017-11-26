@@ -34,9 +34,12 @@ body{
     min-height: 600px;
     
 }
+.content{
+
+}
 .mapParrent{
     margin-top: 650px;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.5);
     min-height: 500px;
     min-width: 800px;
 }
@@ -51,7 +54,7 @@ body{
 
 .TicketParrent{
     margin-top: 650px;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.438);
     min-height: 500px;
     min-width: 800px;
 }
