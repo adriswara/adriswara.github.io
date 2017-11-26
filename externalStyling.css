@@ -7,6 +7,10 @@ body{
     background-attachment: fixed,scroll;
     background-repeat: no-repeat,repeat-y;
 }
+.filler{
+    background-color: beige;
+   
+}
 .whitePage{
     background-color: white;
     margin-left: 100px;
@@ -27,3 +31,4 @@ body{
     margin-bottom: 0;
     margin-top: 0;
 }
+
