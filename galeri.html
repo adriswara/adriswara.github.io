@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chinatown Bandung Galeri</title>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="wisata.css">
@@ -58,8 +59,30 @@
         <!-- /.container-fluid -->
     </nav>
     <div class="filler" style="">
-        <div class="container">
 
+        <h2 class="w3-center">Selamat Datang di Galeri</h2>
+
+        <div class="w3-content w3-section w3-center " style="max-width:500px">
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Trolltunga, Norway
+            </div>
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Trolltunga, Norway
+            </div>
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
+            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
+                Trolltunga, Norway
+            </div>
+            <!-- >
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> 
+            <-->
+        </div>
+
+
+        <div class="container">
 
             <h1>Gambar Lainnya</h1>
             <div class="col-md-12">
@@ -147,8 +170,8 @@
                         </button>
 
                         <button data-toggle="modal21" data-target="#myModal21">
-                                <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2855.JPG" alt="">
-                            </button>
+                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2855.JPG" alt="">
+                        </button>
 
                         <!--  -->
 
@@ -164,10 +187,27 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
 
 </html>
