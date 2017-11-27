@@ -7,6 +7,12 @@ body{
     background-attachment: fixed,scroll;
     background-repeat: no-repeat,repeat-y;
 }
+
+
+.mySlides {display:none}
+.demo {cursor:pointer}
+
+
 .filler{
     background-color: beige;
    

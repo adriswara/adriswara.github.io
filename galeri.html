@@ -62,24 +62,33 @@
 
         <h2 class="w3-center">Selamat Datang di Galeri</h2>
 
-        <div class="w3-content w3-section w3-center " style="max-width:500px">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
-            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-                Trolltunga, Norway
+        <div class="w3-content" style="max-width:1200px">
+            <img class="mySlides" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
+            <img class="mySlides" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
+            <img class="mySlides" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
+
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%"
+                        onclick="currentDiv(1)">
+                </div>
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%"
+                        onclick="currentDiv(2)">
+                </div>
+                <div class="w3-col s4">
+                    <img class="demo w3-opacity w3-hover-opacity-off" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%"
+                        onclick="currentDiv(3)">
+                </div>
             </div>
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
-            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-                Trolltunga, Norway
-            </div>
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
-            <div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">
-                Trolltunga, Norway
-            </div>
-            <!-- >
+        </div>
+
+
+        <!-- >
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> 
             <-->
-        </div>
+
 
 
         <div class="container">
@@ -191,21 +200,36 @@
         </div>
     </div>
 
-    <script>
-        var myIndex = 0;
-        carousel();
 
-        function carousel() {
+    <script>
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " w3-opacity-off";
         }
+
     </script>
 
 </body>
