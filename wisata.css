@@ -72,13 +72,18 @@ body{
 #mapTXT{
     color: black;
 }
-.beigecontent{
+#map {
     margin-left: 450px;
-    min-width: 750px;
+    height: 500px;
+    width: 50%;
+   }
+/**.beigecontent{
+    margin-left: 450px;
+    min-width: 899px;
     min-height: 500px;
    background-image: url("maps.png");
    background-size: cover;
-}
+} */
 .TicketPhoto{
     margin-left: 450px;
     min-width: 750px;

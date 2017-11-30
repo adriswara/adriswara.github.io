@@ -78,25 +78,21 @@
         </div>
     </div>
 
+    
 
     <div class="mapParrent" style="position: relative;">
         <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="float: left;position: absolute;">
-
-
             <center>
                 <p style="margin-top: 200px">
                     <span id="mapTXT" style="padding: 10px;letter-spacing: 5px ;font-size: 20px ;background-color:beige;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',">
                         KUNJUNGI KAMI DISINI</span>
                 </p>
-                <a href="https://www.google.co.id/maps/place/Chinatown+Bandung/@-6.9172051,107.5933328,17z/data=!4m5!3m4!1s0x2e68e61740822c0d:0xf0bad8c42a8715da!8m2!3d-6.917269!4d107.5932094?hl=en">
-                    <button type="button" class="btn btn-primary">Lokasi Kami</button>
-                </a>
 
             </center>
         </div>
+        <div id="map"></div>
         <!---->
-        <div id="beigeID" class="beigecontent" data-aos="fade-left" data-aos-duration="1000" style="margin-top:0px;position: absolute">
-        </div>
+       
     </div>
     <div class="braga" style="border: solid;margin-top: 0px;height: 300px">
 
@@ -199,9 +195,26 @@
         x[slideIndex - 1].style.display = "block";
     }
 
-
-
+    //////////////////maps script
+   
+        var map;
+      function initMap() {
+        var uluru = {lat: -6.917269, lng:107.5932094};
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: uluru,
+          zoom: 15
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+   
 
 </script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJ5rnCqpoNCzECWA83iKJMmX5tZP2iX2o&callback=initMap" async
+    defer>
+    </script>
 
 </html>
