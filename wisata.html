@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Objek Wisata</title>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="wisata.css">
     <script src="e:\Github\.git\adriswara.github.io\js\jquery-3.2.1.min.js"></script>
@@ -26,7 +27,7 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" >
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="#chinaTXT" style="color: beige;background-color: gray">Beranda
                             <span class="sr-only">(current)</span>
@@ -55,14 +56,31 @@
         <!-- /.container-fluid -->
     </nav>
 
-    
+
 
     <div class="header" style="float: left;width:100%;margin-left:0;margin-right:0;margin-top: -20px;">
         <h1 id="chinaTXT" style="font-family:Bebas;color: beige;text-align: center;margin-top: 290px;background-color: rgba(0, 0, 0, 0.658);margin-left: 300px;margin-right:300px;padding: 10px;padding-left: -10px;padding-right: -10px">
             Chinatown Bandung</h1>
     </div>
+
+    <div class="filler" style="">
+
+        <h2 class="w3-center w3-section">Selamat Datang di Chinatown Bandung</h2>
+
+        <div class="w3-content w3-center w3-display-container" style="max-width:700px; height:500px;">
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+    </div>
+
+
     <div class="mapParrent" style="position: relative;">
-        <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="margin-top:0px;float: left;position: absolute;">
+        <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="float: left;position: absolute;">
 
 
             <center>
@@ -105,7 +123,8 @@
     </div>
 
     <div class="contact">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur odit voluptate quibusdam tempore sint nihil laudantium omnis ducimus expedita, rem vel itaque nam et excepturi quisquam numquam eum labore.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque consequatur odit voluptate quibusdam tempore
+            sint nihil laudantium omnis ducimus expedita, rem vel itaque nam et excepturi quisquam numquam eum labore.</p>
     </div>
 </body>
 <script>
@@ -118,6 +137,70 @@
             console.log("is show");
         });
     });
+    ////
+
+    var myIndex = 0;
+    carousel();
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 9000);
+    }
+    //////////other
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-white";
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+
+
+
 
 </script>
 
