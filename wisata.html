@@ -20,7 +20,7 @@
         <div class="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore
+                <a id="exploreTXT"  class="navbar-brand" href="#" style="color: beige">Explore
                     <span id="chinaTXT">Chinatown</span>
                 </a>
             </div>
@@ -59,7 +59,7 @@
 
 
     <div class="header" style="float: left;width:100%;margin-left:0;margin-right:0;margin-top: -20px;">
-        <h1 id="chinaTXT" style="font-family:Bebas;color: beige;text-align: center;margin-top: 290px;background-color: rgba(0, 0, 0, 0.658);margin-left: 300px;margin-right:300px;padding: 10px;padding-left: -10px;padding-right: -10px">
+        <h1 id="chinaTXT" data-aos="fade-up"  style="font-family:Bebas;color: beige;text-align: center;margin-top: 290px;background-color: rgba(0, 0, 0, 0.658);margin-left: 300px;margin-right:300px;padding: 10px;padding-left: -10px;padding-right: -10px">
             Chinatown Bandung</h1>
     </div>
 
@@ -124,7 +124,7 @@
     </div>
 </body>
 <script>
-    AOS.init();
+  
 
 
     $(document).ready(function () {
@@ -132,6 +132,7 @@
             $("#beigeID").slideToggle("slow");
             console.log("is show");
         });
+          AOS.init();
     });
     ////
 
