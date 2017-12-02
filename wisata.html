@@ -20,7 +20,7 @@
         <div class="">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <a id="exploreTXT"  class="navbar-brand" href="#" style="color: beige">Explore
+                <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore
                     <span id="chinaTXT">Chinatown</span>
                 </a>
             </div>
@@ -29,19 +29,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#chinaTXT" style="color: beige;background-color: gray">Beranda
+                        <a href="wisata.html " style="color: beige;background-color: gray">Halaman Utama
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="" style="color: beige">Beranda</a>
+                    </li>
+
                     <li>
                         <a href="galeri.html" style="color: beige">Galeri</a>
                     </li>
                     <li>
-                        <a href="" style="color: beige">Kuliner</a>
+                        <a href="" style="color: beige">Kuliner & Perbelanjaan</a>
                     </li>
-                    <li>
-                        <a href="" style="color: beige">Daftar Toko</a>
-                    </li>
+
                 </ul>
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
@@ -59,28 +62,45 @@
 
 
     <div class="header" style="float: left;width:100%;margin-left:0;margin-right:0;margin-top: -20px;">
-        <h1 id="chinaTXT" data-aos="fade-up"  style="font-family:Bebas;color: beige;text-align: center;margin-top: 290px;background-color: rgba(0, 0, 0, 0.658);margin-left: 300px;margin-right:300px;padding: 10px;padding-left: -10px;padding-right: -10px">
+        <h1 id="chinaTXT" data-aos="fade-up" style="font-family:Bebas;color: beige;text-align: center;margin-top: 290px;background-color: rgba(0, 0, 0, 0.658);margin-left: 300px;margin-right:300px;padding: 10px;padding-left: -10px;padding-right: -10px">
             Chinatown Bandung</h1>
     </div>
 
-    <div class="filler" style="">
+    <div class="" style="">
 
-        <h2 class="w3-center w3-section">Selamat Datang di Chinatown Bandung</h2>
+        <h2 id="welcome2" class="w3-center">SELAMAT DATANG DI CHINATOWN BANDUNG</h2>
 
-        <div class="w3-content w3-center w3-display-container" style="max-width:700px; height:500px;">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
+        <div class="w3-content w3-center w3-display-container" style="max-width:700px; height:500px;margin-left: 0px;margin-top: -50px;">
 
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <a href="e:\Github\.git\adriswara.github.io\galeri.html">
+                <img class="mySlides w3-animate-left" src="e:\Github\.git\adriswara.github.io\gallery\Welcome\Layer 2.png" style="width:200%;">
+            </a>
+            <a href="">
+                <img class="mySlides w3-animate-left" src="e:\Github\.git\adriswara.github.io\gallery\Welcome\Layer 1.png" style="width:200%">
+            </a>
+            <a href="">
+                <img class="mySlides w3-animate-left" src="e:\Github\.git\adriswara.github.io\gallery\Welcome\Layer 3.png" style="width:200%">
+            </a>
+
+            <!-- caption -->
+
+
+
+            <button id="buttonHomeL" class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">
+                <b>&#10094;</b>
+            </button>
+            <button id="buttonHomeR" class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">
+                <b>&#10095;</b>
+            </button>
 
         </div>
     </div>
 
-    
+    <!-- About Chinatown -->
 
-    <div class="mapParrent" style="position: relative;">
+
+
+    <div class="mapParrent" style="position: relative;margin-top: 287px;">
         <div id="redabout" class="mapPar" data-aos="fade-right" data-aos-duration="1000" style="float: left;position: absolute;">
             <center>
                 <p style="margin-top: 200px">
@@ -92,12 +112,12 @@
         </div>
         <div id="map"></div>
         <!---->
-       
+
     </div>
     <div class="braga" style="border: solid;margin-top: 0px;height: 300px">
 
     </div>
-    <div class="TicketParrent" style="position: relative;margin-top:0px">
+    <div class="TicketParrent" style="position: relative;margin-top:0px;background-color: beige;">
         <div id="redTicket" class="tcktPar" data-aos="fade-right" data-aos-duration="1000" style="margin-top:0px;float: left;position: absolute;">
 
 
@@ -124,7 +144,7 @@
     </div>
 </body>
 <script>
-  
+
 
 
     $(document).ready(function () {
@@ -132,7 +152,7 @@
             $("#beigeID").slideToggle("slow");
             console.log("is show");
         });
-          AOS.init();
+        AOS.init();
     });
     ////
 
@@ -197,20 +217,20 @@
     }
 
     //////////////////maps script
-   
-        var map;
-      function initMap() {
-        var uluru = {lat: -6.917269, lng:107.5932094};
+
+    var map;
+    function initMap() {
+        var uluru = { lat: -6.917269, lng: 107.5932094 };
         map = new google.maps.Map(document.getElementById('map'), {
-          center: uluru,
-          zoom: 15
+            center: uluru,
+            zoom: 15
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+            position: uluru,
+            map: map
         });
-      }
-   
+    }
+
 
 </script>
 

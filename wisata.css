@@ -35,12 +35,36 @@ body{
     
 }
 .filler{
-    background-color: beige;
+   background-color: beige;
     height: -100px;
 }
 .content{
 
 }
+
+#buttonHomeL{
+margin-top: 150px;
+}
+
+#buttonHomeR{
+margin-top: 150px;
+margin-right: -650px;
+}
+
+#welcome2{
+    color: beige;
+    margin-top: -10px;
+    padding: 10px;
+    letter-spacing: 5px ;
+    font-size: 20px ;
+    background-color:beige;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',";
+}
+
+#paragAbout{
+    background-color: beige;
+}
+
 .mapParrent{
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 0.5);
