@@ -19,8 +19,8 @@
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="">
+    <nav class="navbar navbar-inverse  navbar-fixed-top w3-black ">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <a id="exploreTXT" class="navbar-brand" href="#" style="color: beige">Explore
@@ -29,45 +29,43 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="wisata.html" style="color: beige;">Beranda
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="" style="color: beige">Beranda</a>
-                    </li>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="wisata.html" class="w3-hover-opacity" style="color: beige">Halaman Utama</a>
+                </li>
 
-                    <li>
-                        <a href="#imageHead" style="color: beige;background-color: gray">Galeri</a>
-                    </li>
-                    <li>
-                        <a href="" style="color: beige">Kuliner</a>
-                    </li>
-                </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <!--  <input type="text" class="form-control" placeholder="Search"> -->
-                    </div>
-                    <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-                </form>
+                <li>
+                    <a href="beranda.html" class="w3-hover-opacity" style="color: beige;">Beranda
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="galeri.html" class="w3-hover-opacity" style="color: beige;background-color: gray">Galeri</a>
+                </li>
+                <li>
+                    <a href="shop.html" class="w3-hover-opacity" style="color: beige">Kuliner & Toko</a>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <!--  <input type="text" class="form-control" placeholder="Search"> -->
+                </div>
+                <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            </form>
 
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+
     <div class="filler" style="">
 
         <h2 class="w3-center w3-section">Selamat Datang di Galeri</h2>
 
         <div class="w3-content w3-center" style="max-width:700px; height:500px;">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2822.JPG" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2826.JPG" style="width:100%">
-            <img class="mySlides w3-animate-fading" src="e:\Github\.git\adriswara.github.io\gallery\Main\IMG_2831.JPG" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="gallery\Main\IMG_2822.JPG" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="gallery\Main\IMG_2826.JPG" style="width:100%">
+            <img class="mySlides w3-animate-fading" src="gallery\Main\IMG_2831.JPG" style="width:100%">
 
             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -83,87 +81,359 @@
 
                     <div class="gal">
 
-                        <button data-toggle="modal1" data-target="#myModal1">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2814.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal1" onclick="document.getElementById('id01').style.display='block'"
+                            data-target="#myModal1">
+                            <img src="gallery\IMG_2814.JPG" alt="">
                         </button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <img src="gallery\IMG_2814.JPG" alt="">
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal2" data-target="#myModal2">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\Potrait\IMG_2865.JPG" alt="">
-                        </button>
-                        <button data-toggle="modal3" data-target="#myModal3">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2817.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal4" data-target="#myModal4">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\Potrait\IMG_2884.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal2" onclick="document.getElementById('id02').style.display='block'"
+                            data-target="#myModal2">
+                            <img src="gallery\Potrait\IMG_2865.JPG" alt="">
                         </button>
+                        <div id="id02" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\Potrait\IMG_2865.JPG" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal5" data-target="#myModal5">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2819.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal6" data-target="#myModal6">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\Potrait\IMG_2887.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal3" onclick="document.getElementById('id03').style.display='block'"
+                            data-target="#myModal3">
+                            <img src="gallery\IMG_2817.JPG" alt="">
                         </button>
-                        <button data-toggle="modal7" data-target="#myModal7">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2829.JPG" alt="">
-                        </button>
+                        <div id="id03" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2817.JPG" alt="">
+                                </div>
 
-                        <button data-toggle="modal8" data-target="#myModal8">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2830.JPG" alt="">
-                        </button>
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal9" data-target="#myModal9">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2834.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal10" data-target="#myModal10">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2835.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal4" onclick="document.getElementById('id04').style.display='block'"
+                            data-target="#myModal4">
+                            <img src="gallery\Potrait\IMG_2884.JPG" alt="">
                         </button>
+                        <div id="id04" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2884.JPG" alt="">
+                                </div>
 
-                        <button data-toggle="modal11" data-target="#myModal11">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2836.JPG" alt="">
-                        </button>
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal12" data-target="#myModal12">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2836.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal13" data-target="#myModal13">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2840.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal14" data-target="#myModal14">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2841.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal5" onclick="document.getElementById('id05').style.display='block'"
+                            data-target="#myModal5">
+                            <img src="gallery\IMG_2819.JPG" alt="">
                         </button>
+                        <div id="id05" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2819.JPG" alt="">
+                                </div>
 
-                        <button data-toggle="modal15" data-target="#myModal15">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2842.JPG" alt="">
-                        </button>
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal16" data-target="#myModal16">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\Potrait\IMG_2830.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal17" data-target="#myModal17">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2843.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal6" onclick="document.getElementById('id06').style.display='block'"
+                            data-target="#myModal6">
+                            <img src="gallery\Potrait\IMG_2887.JPG" alt="">
                         </button>
+                        <div id="id06" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2887.JPG" alt="">
+                                </div>
 
-                        <button data-toggle="modal8" data-target="#myModal8">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2850.JPG" alt="">
-                        </button>
+                            </div>
+                        </div>
 
-                        <button data-toggle="modal9" data-target="#myModal9">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2852.JPG" alt="">
-                        </button>
 
-                        <button data-toggle="modal20" data-target="#myModal20">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2854.JPG" alt="">
+                        <button style="margin-bottom:12px;" data-toggle="modal7" onclick="document.getElementById('id07').style.display='block'"
+                            data-target="#myModal7">
+                            <img src="gallery\IMG_2829.JPG" alt="">
                         </button>
+                        <div id="id07" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2829.JPG" alt="">
+                                </div>
 
-                        <button data-toggle="modal21" data-target="#myModal21">
-                            <img src="e:\Github\.git\adriswara.github.io\gallery\IMG_2855.JPG" alt="">
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal8" onclick="document.getElementById('id08').style.display='block'"
+                            data-target="#myModal8">
+                            <img src="gallery\IMG_2830.JPG" alt="">
                         </button>
+                        <div id="id08" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2830.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal9" onclick="document.getElementById('id09').style.display='block'"
+                            data-target="#myModal9">
+                            <img src="gallery\IMG_2834.JPG" alt="">
+                        </button>
+                        <div id="id09" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id09').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2834.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal10" onclick="document.getElementById('id10').style.display='block'"
+                            data-target="#myModal10">
+                            <img src="gallery\IMG_2835.JPG" alt="">
+                        </button>
+                        <div id="id10" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id10').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2835.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal11" onclick="document.getElementById('id11').style.display='block'"
+                            data-target="#myModal11">
+                            <img src="gallery\IMG_2836.JPG" alt="">
+                        </button>
+                        <div id="id11" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2836.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal12" onclick="document.getElementById('id12').style.display='block'"
+                            data-target="#myModal12">
+                            <img src="gallery\IMG_2836.JPG" alt="">
+                        </button>
+                        <div id="id12" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id12').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2836.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal13" onclick="document.getElementById('id13').style.display='block'"
+                            data-target="#myModal13">
+                            <img src="gallery\IMG_2840.JPG" alt="">
+                        </button>
+                        <div id="id13" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id13').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2840.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal14" onclick="document.getElementById('id14').style.display='block'"
+                            data-target="#myModal14">
+                            <img src="gallery\IMG_2841.JPG" alt="">
+                        </button>
+                        <div id="id14" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id14').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2841.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal15" onclick="document.getElementById('id15').style.display='block'"
+                            data-target="#myModal15">
+                            <img src="gallery\IMG_2842.JPG" alt="">
+                        </button>
+                        <div id="id15" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id15').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2842.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal16" onclick="document.getElementById('id16').style.display='block'"
+                            data-target="#myModal16">
+                            <img src="gallery\Potrait\IMG_2830.JPG" alt="">
+                        </button>
+                        <div id="id16" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id16').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2830.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal17" onclick="document.getElementById('id17').style.display='block'"
+                            data-target="#myModal17">
+                            <img src="gallery\IMG_2843.JPG" alt="">
+                        </button>
+                        <div id="id17" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id17').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2843.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal8" onclick="document.getElementById('id18').style.display='block'"
+                            data-target="#myModal8">
+                            <img src="gallery\IMG_2850.JPG" alt="">
+                        </button>
+                        <div id="id18" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id18').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2850.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal9" onclick="document.getElementById('id19').style.display='block'"
+                            data-target="#myModal9">
+                            <img src="gallery\IMG_2852.JPG" alt="">
+                        </button>
+                        <div id="id19" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id19').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2852.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal20" onclick="document.getElementById('id20').style.display='block'"
+                            data-target="#myModal20">
+                            <img src="gallery\IMG_2854.JPG" alt="">
+                        </button>
+                        <div id="id20" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id20').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2854.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <button style="margin-bottom:12px;" data-toggle="modal21" onclick="document.getElementById('id21').style.display='block'"
+                            data-target="#myModal21">
+                            <img src="gallery\IMG_2855.JPG" alt="">
+                        </button>
+                        <div id="id21" class="w3-modal">
+                            <div class="w3-modal-content w3-animate-top w3-card-4">
+                                <header class="w3-container w3-black">
+                                    <span onclick="document.getElementById('id21').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                </header>
+                                <div class="w3-container">
+                                    <img src="gallery\IMG_2855.JPG" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+
 
                         <!--  -->
 
@@ -183,6 +453,12 @@
         </div>
     </div>
 
+    <div class="contact">
+        <div class="contact">
+            <p>KONTAK PENGEMBANG</p>
+            <p>iG:@adriajon</p>
+        </div>
+    </div>
 
     <script>
 
